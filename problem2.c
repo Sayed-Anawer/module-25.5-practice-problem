@@ -1,4 +1,9 @@
-// bubble sort in c
+// Write a C program to take one positive integer N, the size of an array as input. Then take a positive integer array
+// of size N . And the next line will contain k . Now find the k-th largest and kth-smallest element from the array.
+// Implement it using function. And try to implement it using 3 functions .1st one is for sorting , second one for
+// finding k-th largest element and third one for finding the kth- smallest element.
+// See the sample output for more clarification.
+// Note – 1<=k<=N
 
 #include <stdio.h>
 void findingLargestAndSmallest(int n, int arr[n],int k){

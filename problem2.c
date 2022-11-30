@@ -1,7 +1,7 @@
 // bubble sort in c
 
 #include <stdio.h>
-int findingLargestAndSmallest(int n, int arr[n],int k){
+void findingLargestAndSmallest(int n, int arr[n],int k){
         for(int i=0;i<n-1;i++){ 
         for(int j=0;j<n-i-1;j++){
             if(arr[j]>arr[j+1]){

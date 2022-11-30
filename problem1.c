@@ -3,15 +3,8 @@
 // Note – In the given input, there may exist duplicate value.
 
 #include<stdio.h>
-int main(){
-    int n,k;
-    int arr[n];
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-    scanf("%d",&k);
-    int count=0;
+int counting(int n, int arr[n],int k){
+int count=0;
     for(int i=0;i<n;i++){
         if(arr[i]<k){
             count++;
@@ -20,7 +13,18 @@ int main(){
             count++;
         }
     }
-    printf("%d\n",count);
+    return count;
+}
+int main(){
+    int n,k;
+    int arr[n];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&k);
+    
+    printf("%d\n",counting(n,arr,k));
 
     return 0;
 
